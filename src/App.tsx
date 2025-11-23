@@ -5,12 +5,11 @@ import Level1 from "./pages/Level1";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/cert-arcade-frontend">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cert/:certId" element={<CertDetail />} />
         <Route path="/cert/:certId/level1" element={<Level1 />} />
-
       </Routes>
     </BrowserRouter>
   );
